@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>The Great Emperor</title>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<link rel="stylesheet" type="text/css" href="./css/emperor.css" >
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" >
+<link rel="stylesheet" type="text/css" href="./css/examples.css" >
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./js/ScrollMagic.js"></script>
+</head>
+<script src="./js/lib/three.min.js"></script>
+<script src='./js/dat.gui.min.js'></script>
+
+
+
+
+<body>
+
+
+<!-- Main Container -->
+
+<!--  <div class="absolute">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-offset-1 col-md-11">
+
+                <p class="rellax" data-rellax-speed="-1">Strive for Greatness</p>
+                <h1 class="rellax" data-rellax-speed="-2">Live your Dream</h1>
+              </div>
+            </div>
+          </div>
+      </div>
+  </samok>  <div class="container-fluid"> -->
+<!--   <header> <a href="">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#hero">LOGIN</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li> <a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+     -->
+     <div class="scrollContent">
+     	<section id="titlechart">
+     		<div id="description">
+     			<h1>Simple Pinning</h1>
+     			<h2>Two examples of basic pinning.</h2>
+     			<ol>
+     				<li>A pin of a scene that has a duration will be pinned for the repective ammount of scrolled pixels and then released again.</li>
+     				<li>If no duration is defined, the pinned element will never be released unless scrolling back past the trigger position.</li>
+     			</ol>
+     			<p>
+     				Note that the first pin pushes down the following elements. A gap with the size of the scene's duration appears.<br>
+     				This can be disabled using the option <code>pushFollowers: false</code>. For scenes with a duration of 0 "<code>pushFollowers</code>" is always disabled.
+     			</p>
+     			<p>
+     				For more information check out the documentation on <a href="../../docs/ScrollMagic.Scene.html#setPin">Scene.setPin()</a>.
+     			</p>
+     			<a href="#" class="viewsource">view source</a>
+     		</div>
+     		<script>
+     			// init controller
+     			var controller = new ScrollMagic.Controller();
+     		</script>
+     	</section>
+     	<section class="demo">
+     		<div class="spacer s2"></div>
+     		<div id="trigger1" class="spacer s0"></div>
+     		<div id="pin1" class="box2 blue">
+     			<p>Stay where you are (at least for a while).</p>
+     			<a href="#" class="viewsource">view source</a>
+     		</div>
+     		<div class="spacer s2"></div>
+     		<script>
+     			$(function () { // wait for document ready
+     				// build scene
+     				var scene = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 300})
+     								.setPin("#pin1")
+     								.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+     								.addTo(controller);
+     			});
+     		</script>
+     	</section>
+     	<section class="demo">
+     		<div class="spacer s2"></div>
+     		<div id="trigger2" class="spacer s0"></div>
+     		<div id="pin2" class="box2 blue">
+     			<p>Take me with you!</p>
+     			<a href="#" class="viewsource">view source</a>
+     		</div>
+     		<div class="spacer s2"></div>
+     		<script>
+     			$(function () { // wait for document ready
+     				// build scene
+     				var scene = new ScrollMagic.Scene({triggerElement: "#pin2"})
+     								.setPin("#pin2")
+     								.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
+     								.addTo(controller);
+     			});
+     		</script>
+     	</section>
+     	<div class="spacer s_viewport"></div>
+     </div>
+    <section class="section-hero" id="hero">
+
+
+       <div class="absolute above" id="webgl"></div>
+ <div class="bg" id="bg"></div>
+<div id="over">
+    <span class="Centerer"></span>
+    <img class="above2 Centered" src="images/logo.png" />
+</div>
+
+
+  </section>
+
+  <section class="about" id="about">
+
+    <h2 class="hidden">About</h2>
+	<p class="text_column">Thiaas is the best</p>
+    <p class="text_column">EMPEROR is a direct selling company in the health, beauty and wellness industry in the Philippine today making hundreds of members every day. It is spearheaded be the most-promising entrepreneur, Mr. Jonathan “joban” Bantugan as a new leader of multi-level marketing business, they introduced new sets strategies and marketing plans for success in the multi-level industry in order to build the greatest company that is EMPEROR.</p>
+    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+  </section>
+  <section class="products">
+
+    <div id="showcase" class="noselect">
+      <img class="cloud9-item" src="images/young.png" alt="Firefox">
+      <img class="cloud9-item" src="images/young 2.png" alt="Wyzo">
+      <img class="cloud9-item" src="images/cee.png" alt="Opera">
+      <img class="cloud9-item" src="images/browsers/chrome.png" alt="Chrome">
+      <img class="cloud9-item" src="images/browsers/iexplore.png" alt="Internet Explorer">
+      <img class="cloud9-item" src="images/browsers/safari.png" alt="Safari">
+
+      	      <div id="nav"class="noselect">
+        <button class="left">
+
+        </button>
+        <button class="right">
+
+        </button>
+      </div>
+    </div>
+
+
+
+
+  </section>
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail">
+      <h1 class="stats">1500</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">2300</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">7500</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">9870</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+  </div>
+  <!-- Parallax Section -->
+  <section class="banner">
+    <h2 class="parallax">PARALLAX HERO</h2>
+    <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+    <img src="images/cee.png" >
+  </section>
+  <!-- More Info Section -->
+  <footer>
+    <article class="footer_column">
+      <h3>ABaOUT</h3>
+      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+    </article>
+    <article class="footer_column">
+      <h3>LOCATION</h3>
+      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+    </article>
+
+  <!-- Footer Section -->
+
+  <!-- Copyrights Section -->
+     <div class="copyright">&copy;2015 - <strong>Arjo Magno</strong></div>
+
+  </footer>
+
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+    <div class="button">JOIN US</div>
+  </section>
+
+  </div>
+
+
+<script src="./js/lib/jquery.js"></script>
+<script src="./js/lib/jquery.reflection.js"></script>
+<script src="./js/lib/jquery.cloud9carousel.js"></script>
+
+
+<script>
+
+$(function() {
+var showcase = $("#showcase"), title = $('#item-title')
+showcase.Cloud9Carousel( {
+yOrigin: 42,
+yRadius: 48,
+buttonLeft: $("#nav > .left"),
+buttonRight: $("#nav > .right"),
+autoPlay: 1,
+bringToFront: true,
+onRendered: rendered,
+onLoaded: function() {
+  showcase.css( 'visibility', 'visible' )
+  showcase.css( 'display', 'none' )
+  showcase.fadeIn( 10)
+}
+
+
+} )
+function rendered( carousel ) {
+
+  $(window).resize(function() {
+
+    carousel.getContainerSize()
+
+});
+title.text( carousel.nearestItem().element.alt )
+var c = Math.cos((carousel.floatIndex() % 1) * 2 * Math.PI)
+title.css('opacity', 0.5 + (0.5 * c))
+}
+$('#nav > button').click( function( e ) {
+var b = $(e.target).addClass( 'down' )
+setTimeout( function() { b.removeClass( 'down' ) }, 80 )
+} )
+$(document).keydown( function( e ) {
+switch( e.keyCode ) {
+  case 37:
+	$('#nav > .left').click()
+	break
+  case 39:
+	$('#nav > .right').click()
+}
+} )
+
+
+
+});
+
+
+</script>
+
+
+<style>
+    #showcase {
+      height:350px;
+      background: #000000;
+    }
+  </style>
+
+
+<script src="./js/lib/poly.js"></script>
+
+
+
+
+<script src="./js/lib/Detector.js"></script>
+<script src='./js/threex.atmospherematerial.js'></script>
+
+<script src="./js/lib/earth.js"></script>
+
+
+<!-- Main Container Ends -->
+</body>
+</html>
